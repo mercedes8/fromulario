@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+
+.product-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.product-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-form-container label {
+  margin-bottom: 8px;
+}
+
+.product-form-container input,
+.product-form-container textarea,
+.product-form-container select {
+  margin-bottom: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
