@@ -1,7 +1,10 @@
 const express = require('express');
 const cors = require('cors');
 const productRoutes = require('./routes/productRoutes');
-const { sequelize } = require('../config/database'); // Asegúrate de que la importación sea correcta
+const { connectDB, sequelize } = require('../config/database'); // Asegúrate de que la importación sea correcta
+
+connectDB();
+
 const app = express();
 const PORT = process.env.PORT || 5001; // Cambiar el puerto a 5001
 
